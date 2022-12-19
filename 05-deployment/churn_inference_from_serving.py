@@ -1,6 +1,7 @@
 import requests
 
-url = "http://localhost:9696/predict"
+host = "churn-serve-env.eba-<code>.<region>.elasticbeanstalk.com"
+url = f"http://{host}/predict"
 
 customer = {
     #"customerid": "8879-zkjof",
@@ -18,9 +19,9 @@ customer = {
     "techsupport": "yes",
     "streamingtv": "yes",
     "streamingmovies": "yes",
-    "contract": "one_year",
+    "contract": "month_to_month",
     "paperlessbilling": "yes",
-    "paymentmethod": "bank_transfer_(automatic)",
+    "paymentmethod": "electronic_check",
     "monthlycharges": 7.1,#79.85,
     "totalcharges": 332 #3320.75
 }

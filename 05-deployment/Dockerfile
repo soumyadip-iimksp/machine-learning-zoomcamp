@@ -26,3 +26,6 @@ ENTRYPOINT ["gunicorn", "--bind", "0.0.0.0:9696", "predict:app"]
 
 # To map my system port with docker port
 # docker run -it --rm -p 9696:9696 zcml-test    
+
+# To create and start elastic bean stalk
+#eb create churn-serve-env
