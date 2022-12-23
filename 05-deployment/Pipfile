@@ -12,6 +12,7 @@ waitress = "*"
 requests = "*"
 
 [dev-packages]
+awsebcli = "*"
 
 [requires]
 python_version = "3.9"
