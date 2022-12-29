@@ -46,3 +46,38 @@ Go to Lambda
                             -> Failed the test due to task time out (3 sec) as for 1st time it will take longer duration to initialize 
                                 ->  Go to Configuration -> General Information -> Edit memory to 1024 MB and Timeout to 30 sec -> Run Test again
 ```
+
+Need to create API gateway to expose Lambda function as API gateway
+
+```
+Search and go to API Gateway
+```
+```
+Click on Build for REST API
+```
+```
+Click on New API and enter API name and CREATE API
+```
+```
+Click on ACTIONS and from dropdown choose CREATE RESOURCE then enter "predict" in RESOURCE NAME
+```
+```
+Click on CREATE METHOD to create a method (POST) to invoke the ENDPOINT 
+```
+
+```
+Click the tick mark under POST and select LAMBDA FUNCTION as Integration Type, choose the LAMBDA FUNCTION name and SAVE
+```
+
+```
+Click on TEST and enter the url as dictionary (JSON Format) in the REQUEST BODY and run TEST agaian to check and confirm the response
+```
+```
+Click on ACTIONS and then on DEPLOY API
+```
+To find the AURL of the API again, 
+```
+Go to API gateway
+Select the corret name of the API
+Select STAGES and then will find the invoke url
+```
