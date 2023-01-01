@@ -1,0 +1,12 @@
+'serving_default'
+input -> 'input_28'
+dtype: DT_FLOAT
+shape: (-1, 299, 299, 3)
+name: serving_default_input_28:0
+
+outputs -> 'dense_18'
+dtype: DT_FLOAT
+shape: (-1, 10)
+
+
+tensorflow/serving/predict
