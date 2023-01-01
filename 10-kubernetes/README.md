@@ -126,7 +126,7 @@ Concrete Functions:
         Argument #3
           DType: NoneType
           Value: None
-          ```
+```
 
 
 Run model in a pre-built docker image tensorflow/serving:2.7.0
