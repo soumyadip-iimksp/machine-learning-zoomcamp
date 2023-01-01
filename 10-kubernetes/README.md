@@ -127,3 +127,17 @@ Concrete Functions:
           DType: NoneType
           Value: None
           ```
+
+
+Run model in a pre-built docker image tensorflow/serving:2.7.0
+```
+ winpty docker run -it --rm  -p 8500:8500  \
+--mount type=bind,source=$(pwd)/clothing-model,target=/models/clothing-model/1 \
+-e MODEL_NAME="clothing-model" \
+-t tensorflow/serving:2.7.0
+```
+
+Install GRPCIO and TF-Serving libraries
+```
+pip install grpcio==1.42.0 tensorflow-serving-api==2.7.0
+```
